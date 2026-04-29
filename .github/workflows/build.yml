@@ -19,7 +19,7 @@ jobs:
       
       - name: Build EXE
         run: |
-          pyinstaller --onefile --noconsole --hidden-import=win32crypt --hidden-import=Crypto installer.py
+          pyinstaller --onefile --noconsole --hidden-import=win32crypt --hidden-import=Crypto main.py
       
       - name: Upload artifact
         uses: actions/upload-artifact@v4
